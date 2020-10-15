@@ -35,4 +35,5 @@ public class Problem1Test {
             assertArrayEquals("cases " + i + " failed", expects[i], inputs[i]);
         }
     }
+
 }

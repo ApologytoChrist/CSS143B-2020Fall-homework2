@@ -7,12 +7,14 @@ public class Problem2Test {
     public void testRemoveDuplicates() {
         int[][] inputs = {
                 // DO NOT REMOVE OR CHANGE THE GIVEN TEST CASES!
-                {0, 0, 1, 1, 1, 2, 2, 4, 4, 6}
+                {0, 0, 1, 1, 1, 2, 2, 4, 4, 6},
                 // add more test cases
+                {0, 0, 0, 0, 0, 0}
         };
 
         int[][] expects = {
-                {0, 1, 2, 4, 6}
+                {0, 1, 2, 4, 6},
+                {0}
                 // add more test cases
         };
 

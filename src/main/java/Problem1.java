@@ -11,36 +11,36 @@ public class Problem1 {
 
     // Do not change signature (function name, parameters type, and return type)
     public static void colorSort(int[] nums) {
-        front = 0;
-        middle = 0;
-        end = nums.length - 1;
-        int tempNumber;
+        if (nums != null) {
+            front = 0;
+            middle = 0;
+            end = nums.length - 1;
+            int tempNumber;
 
-        int i = 0;
-        int j = end;
+            int i = 0;
+            int j = end;
 
-        while (i <= j && middle <= end) {
-            int number = nums[i];
+            while (i <= j && middle <= end) {
+                int number = nums[i];
 
-            if (number == 0) {
-                tempNumber = nums[front];
-                nums[front] = number;
-                nums[i] = tempNumber;
-                i++;
-                front++;
-                middle++;
-            }
-            else if(number == 1) {
-                middle++;
-                i++;
-            }
-            else if (number == 2) {
-                tempNumber = nums[end];
-                nums[end] = number;
-                nums[i] = tempNumber;
-                j--;
-                i++;
-                end--;
+                if (number == 0) {
+                    tempNumber = nums[front];
+                    nums[front] = number;
+                    nums[i] = tempNumber;
+                    i++;
+                    front++;
+                    middle++;
+                } else if (number == 1) {
+                    middle++;
+                    i++;
+                } else if (number == 2) {
+                    tempNumber = nums[end];
+                    nums[end] = number;
+                    nums[i] = tempNumber;
+                    j--;
+                    i++;
+                    end--;
+                }
             }
         }
     }
