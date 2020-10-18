@@ -5,13 +5,9 @@ public class MovieComedy extends Movie {
 
     public MovieComedy(String rating, String title) {
         super(rating, title);
-        // homework
-        // tip: use the 'super' keyword
     }
 
     public MovieComedy(MovieComedy anotherMovie) {
-        // homework
-        // tip: use the 'super' keyword
         super(anotherMovie);
     }
 
@@ -22,7 +18,6 @@ public class MovieComedy extends Movie {
 
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
-        // homework
         if (numOfDaysPastDue <= 0 ) {
             return 0;
         } else {

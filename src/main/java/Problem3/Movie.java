@@ -11,7 +11,6 @@ public abstract class Movie implements StoreMediaOperations {
         this.id = UUID.randomUUID();
         this.rating = rating;
         this.title = title;
-        // homework
     }
 
     public Movie(Movie anotherMovie) {

@@ -7,16 +7,12 @@ public class BookFiction extends Book {
     private String genres;
 
     public BookFiction(String title, String author, String genres) {
-        // homework
-        // tip: use the 'super' keyword
         super(title,author);
         this.genres = genres;
     }
 
     // copy constructor
     public BookFiction(BookFiction anotherBook) {
-        // homework
-        // tip: use the 'super' keyword
         super(anotherBook);
         this.genres = anotherBook.genres;
     }
