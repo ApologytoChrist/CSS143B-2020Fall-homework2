@@ -20,6 +20,9 @@ public class Problem1 {
             int i = 0;
             int j = end;
 
+            /* https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+            I used the ideas from the link for the sorting bit, I got stuck trying to figure out the way to only do it
+             with one pass */
             while (i <= j && middle <= end) {
                 int number = nums[i];
 

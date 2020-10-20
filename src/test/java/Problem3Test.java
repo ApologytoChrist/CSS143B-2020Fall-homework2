@@ -10,6 +10,8 @@ public class Problem3Test {
         MovieAction m = new MovieAction("PG13", "ti1");
         MovieAction mc = new MovieAction(m);
         assertTrue(m.equals(mc));
+        System.out.println(m.hashCode());
+        System.out.println(mc.hashCode());
         mc = new MovieAction("PG13", "ti1");
         assertFalse(m.equals(mc));
     }
