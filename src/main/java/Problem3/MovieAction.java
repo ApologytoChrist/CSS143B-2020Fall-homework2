@@ -24,9 +24,5 @@ public class MovieAction extends Movie {
         }
         int fee = lateFeePerDayInDollar * numOfDaysPastDue;
         return (numOfDaysPastDue >= 5) ? 2 * fee : fee;
-            return 2 * numOfDaysPastDue * lateFeePerDayInDollar;
-        } else {
-            return numOfDaysPastDue * lateFeePerDayInDollar;
-        }
     }
 }
