@@ -19,9 +19,6 @@ public class Problem2 {
                 difNumIndex++;
             }
         }
-        for (int i = difNumIndex; i < nums.length; i++) {
-            nums[i] = 0;
-        }
 
         return difNumIndex; // place holder
     }
